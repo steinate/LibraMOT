@@ -41,7 +41,8 @@ class MotLoss(torch.nn.Module):
         self.s_det = nn.Parameter(-1.85 * torch.ones(1))
         self.s_id = nn.Parameter(-1.05 * torch.ones(1))
 
-        self.wid = torch.randn((opt.nID, 128)).cuda()
+        # self.wid = torch.randn((opt.nID, 128)).cuda()
+        self.wid = nn.Parameter(torch.randn(opt.nID, 128)).cuda()
 
     def forward(self, outputs, batch):
         # batch:size = 4
