@@ -1,0 +1,18 @@
+{
+    "root":"/media/zyf301/AE1EF53A1EF4FBE1/pengjq/MOTdata",
+    "train":
+    {
+        "mot17":"./data/mot17.train",
+        "eth":"./data/eth.train",
+        "mot20":"./data/mot20.train",
+        "mot15":"./data/mot15.train"
+    },
+    "test_emb":
+    {
+        "mot15":"./data/mot15.val"
+    },
+    "test":
+    {
+        "mot15":"./data/mot15.val"
+    }
+}
